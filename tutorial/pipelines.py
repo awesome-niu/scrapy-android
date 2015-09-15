@@ -19,7 +19,7 @@ class TutorialPipeline(object):
 class JsonWithEncodingPipeline(object):
 
     def __init__(self):
-        self.file = codecs.open('manong-mongodb.json', 'w', encoding='gbk')
+        self.file = codecs.open('techandroid.json', 'w', encoding='gbk')
 
     def process_item(self, item, spider):
         line = json.dumps(OrderedDict(item), ensure_ascii=False, sort_keys=False) + "\n"
