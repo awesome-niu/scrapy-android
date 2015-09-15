@@ -16,12 +16,17 @@ NEWSPIDER_MODULE = 'tutorial.spiders'
 
 ITEM_PIPELINES = {
     'tutorial.pipelines.JsonWithEncodingPipeline': 300,
-    # 'tutorial.pipelines.RedisPipeline': 301,
+    'tutorial.pipelines.MongoDBPipeline': 301,
 }
 
 # LOG_LEVEL = 'INFO'
 
 DOWNLOAD_DELAY = 5
+
+MONGODB_HOST = 'localhost'
+MONGODB_PORT = 27017
+MONGODB_DATABASE = 'scrapy'
+MONGODB_COLLECTION = 'tech.android'
 
 
 
