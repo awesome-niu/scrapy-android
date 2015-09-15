@@ -14,10 +14,10 @@ BOT_NAME = 'tutorial'
 SPIDER_MODULES = ['tutorial.spiders']
 NEWSPIDER_MODULE = 'tutorial.spiders'
 
-# ITEM_PIPELINES = {
-#     'tutorial.pipelines.JsonWithEncodingPipeline': 300,
-    # 'tutorial.pipelines.MongoDBPipeline': 301,
-# }
+ITEM_PIPELINES = {
+    'tutorial.pipelines.JsonWithEncodingPipeline': 300,
+    'tutorial.pipelines.MongoDBPipeline': 301,
+}
 
 # LOG_LEVEL = 'INFO'
 
